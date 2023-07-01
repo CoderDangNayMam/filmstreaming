@@ -1,0 +1,100 @@
+<section class="movie-detail">
+  <div class="container">
+
+    <figure class="movie-detail-banner">
+
+      <img src="./assets/images/movie-4.png" alt="Free guy movie poster" id="image-details">
+
+      <button class="play-btn" onclick="filmModal()">
+        <ion-icon name="play-circle-outline"></ion-icon>
+      </button>
+
+    </figure>
+
+    <div class="movie-detail-content">
+
+
+      <h1 class="h1 detail-title" id="title-details" >
+        Free <strong>Guy</strong>
+      </h1>
+
+      <div class="meta-wrapper">
+
+        <div class="badge-wrapper">
+          <div class="badge badge-fill">PG 13</div>
+
+          <div class="badge badge-outline" id="status-details">HD</div>
+        </div>
+
+        <div class="ganre-wrapper">
+          <a href="#" id="genre-details">Comedy,</a>
+
+        </div>
+
+        <div class="date-time">
+
+          <div>
+            <ion-icon name="calendar-outline"></ion-icon>
+
+            <time datetime="2021" id="productionYear-details">2021</time>
+          </div>
+
+          <div>
+            <ion-icon name="time-outline"></ion-icon>
+
+            <time datetime="PT115M" id="duration-details">115 min</time>
+          </div>
+
+        </div>
+
+      </div>
+
+      <p class="storyline" id="sumary-details">
+        A bank teller called Guy realizes he is a background character in an open world video game called Free
+        City that will
+        soon go offline.
+      </p>
+
+      <div class="details-actions">
+
+        <button class="share">
+          <ion-icon name="share-social"></ion-icon>
+
+          <span>Share</span>
+        </button>
+
+        <div class="title-wrapper">
+          <p class="title">Prime Video</p>
+
+          <p class="text">Streaming Channels</p>
+        </div>
+
+        <button class="btn btn-primary" onclick="filmModal()">
+          <ion-icon name="play"></ion-icon>
+
+          <span onclick="filmModal()">Watch Now</span>
+        </button>
+
+      </div>
+
+      <a href="./assets/images/movie-4.png" download class="download-btn">
+        <span>Download</span>
+
+        <ion-icon name="download-outline"></ion-icon>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<div id="watchFilm" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="document.getElementById('watchFilm').style.display='none';">&times;</span>
+
+    <div id="iframe_film"></div>
+
+  </div>
+
+</div>
